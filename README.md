@@ -1,16 +1,40 @@
 # PerpScope
 
-An AI-assisted intelligence engine for tracking Perpetual DEX fundamentals and competitive dynamics.
+**HYPE / ASTER 竞品研究与数据核验工具。** 我把个人 Web3 研究问题，借助 Codex 做成了可运行的数据采集、指标比较与报告流程。
 
-PerpScope is a Python CLI that collects public data for Hyperliquid and Aster, preserves raw responses, normalizes the metrics, calculates comparable KPIs, detects transparent rule-based signals, and writes a daily research memo.
+## 直接看成果
 
-## My role and AI assistance
+### [打开可交互报告，无需安装](https://liamliang0.github.io/perpscope-research/)
 
-I initiated PerpScope while researching whether the competitive position and token value capture of Hyperliquid and Aster could support an investment thesis.
+可以切换成交量与持仓份额，查看双协议数据，核对来源和口径，或了解我在项目中的贡献。
 
-I owned the research question, metric framework, scope rules, validation criteria, and iteration decisions. I used OpenAI Codex to help implement the data collectors, calculations, report generator, and tests. I reviewed the outputs against source definitions and kept missing or non-comparable data explicit rather than forcing a conclusion.
+[![点击打开 PerpScope 交互式报告](docs/preview.png)](https://liamliang0.github.io/perpscope-research/)
 
-This repository is therefore best understood as an **AI-assisted research system**, not as a claim that I independently engineered every line of the software.
+样例采集于 **2026-10-04**，保留真实日期和缺失数据；本页不是实时行情。
+
+## 这个项目解决什么问题
+
+我研究 Hyperliquid 与 Aster 的竞争和Token价值捕获时，发现“拿到数字”还不够：不同接口的业务范围、持仓定义和历史覆盖可能不同。PerpScope把这些差异一起记录，避免把不能直接比较的数据拼成结论。
+
+## 能具体核实什么
+
+| 成果 | 查看方式 |
+|---|---|
+| 协议相对位置 | [成交量与OI份额对比](https://liamliang0.github.io/perpscope-research/#overview)，明确仅比较两家协议 |
+| 指标口径核验 | [核验过程与原始接口](https://liamliang0.github.io/perpscope-research/#quality)，区分永续业务、母协议和Token层级 |
+| 实际交付 | [双协议数据表](https://liamliang0.github.io/perpscope-research/#comparison)、[原始报告](examples/sample_report.md)、[展示数据](docs/report-data.json) |
+| 程序检查 | [测试代码](tests/)、[自动检查结果](https://github.com/liamliang0/perpscope-research/actions) |
+
+## 我负责什么
+
+- **研究问题与框架：**从交易活跃、持仓规模、费用/收入追到Token价值捕获，确定需要验证的关系。
+- **数据口径与验收：**区分同源OI、母协议收益和永续业务指标；历史不足或数据缺失时保留N/A。
+- **AI辅助执行与迭代：**提出需求、配置流程、检查输出，根据实际问题迭代；Codex辅助实现采集、计算、报告与测试。
+
+这是个人研究与AI工作流实践，没有虚构客户、用户增长或投资收益。默认报告使用可检查的规则，可选LLM用于整理结构化数据；不把模板文字冒充独立研究判断。
+
+<details>
+<summary>展开运行方法、数据接口与实现细节</summary>
 
 ## Simple Windows setup
 
@@ -97,24 +121,6 @@ Data is stored under `data/raw`, `data/processed`, and `data/history`. Running m
 
 The code does not silently fall back to estimated data. A source failure affects its own fields, not the complete run.
 
-## Example output
-
-Recruiters and researchers can inspect a complete real-data example without running the project: [examples/sample_report.md](examples/sample_report.md).
-
-```markdown
-## Relative Position
-
-- Hyperliquid has 84.2% of combined Hyperliquid+Aster 24h volume.
-- Aster has 15.8% of combined Hyperliquid+Aster 24h volume.
-- These are two-protocol relative shares, not total perp-DEX market share.
-
-## Key Signals
-
-- 🟡 Watch — History is still accumulating. No change-based signal has enough local history.
-```
-
-Actual values are fetched at runtime and written to `output/daily_report.md`.
-
 ## How to run
 
 Requires Python 3.10+.
@@ -193,3 +199,6 @@ perpscope/
 ├── output/
 └── tests/
 ```
+
+
+</details>

@@ -1,0 +1,177 @@
+{
+  "capture_date": "2026-10-04",
+  "tables": {
+    "perps": [
+      {
+        "metric": "24h Volume",
+        "label": "24小时成交量",
+        "hyperliquid": "$1.94B",
+        "aster": "$658.43M"
+      },
+      {
+        "metric": "7d Volume",
+        "label": "7日成交量",
+        "hyperliquid": "N/A",
+        "aster": "N/A"
+      },
+      {
+        "metric": "30d Volume",
+        "label": "30日成交量",
+        "hyperliquid": "N/A",
+        "aster": "N/A"
+      },
+      {
+        "metric": "Standardized OI",
+        "label": "同源持仓量 OI",
+        "hyperliquid": "$8.37B",
+        "aster": "$1.40B"
+      },
+      {
+        "metric": "Official API OI",
+        "label": "官方持仓量（仅交叉核对）",
+        "hyperliquid": "$13.07B",
+        "aster": "N/A"
+      },
+      {
+        "metric": "Perp 24h Fees",
+        "label": "永续业务24小时费用",
+        "hyperliquid": "$829.86K",
+        "aster": "$51.81K"
+      },
+      {
+        "metric": "Perp 24h Revenue",
+        "label": "永续业务24小时收入",
+        "hyperliquid": "$646.06K",
+        "aster": "N/A"
+      }
+    ],
+    "token": [
+      {
+        "metric": "Parent-protocol TVL",
+        "label": "母协议TVL",
+        "hyperliquid": "$7.31B",
+        "aster": "$792.60M"
+      },
+      {
+        "metric": "Perps-linked Holder Revenue (24h)",
+        "label": "永续业务持有人收益（24h）",
+        "hyperliquid": "$646.06K",
+        "aster": "N/A"
+      },
+      {
+        "metric": "Parent/Token Holder Revenue (24h)",
+        "label": "母协议/Token持有人收益（24h）",
+        "hyperliquid": "N/A",
+        "aster": "$125.27K"
+      },
+      {
+        "metric": "Token Price",
+        "label": "Token价格",
+        "hyperliquid": "$90.69",
+        "aster": "$0.71"
+      },
+      {
+        "metric": "Market Cap",
+        "label": "流通市值",
+        "hyperliquid": "$20.18B",
+        "aster": "$1.93B"
+      },
+      {
+        "metric": "FDV",
+        "label": "完全稀释估值 FDV",
+        "hyperliquid": "$86.65B",
+        "aster": "$5.56B"
+      }
+    ]
+  },
+  "shares": {
+    "volume": {
+      "hyperliquid": 74.7,
+      "aster": 25.3
+    },
+    "oi": {
+      "hyperliquid": 85.7,
+      "aster": 14.3
+    }
+  },
+  "sources": [
+    {
+      "provider": "Hyperliquid official API",
+      "endpoint": "https://api.hyperliquid.xyz/info",
+      "scope": "perps_specific",
+      "fetched_at": "2026-10-04T10:07:22.018713+00:00",
+      "used_for": "Hyperliquid.volume_24h, Hyperliquid.official_open_interest"
+    },
+    {
+      "provider": "DefiLlama",
+      "endpoint": "https://api.llama.fi/protocol/hyperliquid",
+      "scope": "parent_protocol",
+      "fetched_at": "2026-10-04T10:07:27.267859+00:00",
+      "used_for": "Hyperliquid.tvl"
+    },
+    {
+      "provider": "DefiLlama",
+      "endpoint": "https://api.llama.fi/summary/fees/hyperliquid-perps?dataType=dailyFees",
+      "scope": "perps_specific",
+      "fetched_at": "2026-10-04T10:07:27.267888+00:00",
+      "used_for": "Hyperliquid.fees_24h, Hyperliquid.fees_7d, Hyperliquid.fees_30d"
+    },
+    {
+      "provider": "DefiLlama",
+      "endpoint": "https://api.llama.fi/summary/fees/hyperliquid-perps?dataType=dailyRevenue",
+      "scope": "perps_specific",
+      "fetched_at": "2026-10-04T10:07:27.267910+00:00",
+      "used_for": "Hyperliquid.revenue_24h, Hyperliquid.revenue_7d, Hyperliquid.revenue_30d"
+    },
+    {
+      "provider": "DefiLlama",
+      "endpoint": "https://api.llama.fi/summary/fees/hyperliquid-perps?dataType=dailyHoldersRevenue",
+      "scope": "perps_specific",
+      "fetched_at": "2026-10-04T10:07:27.267924+00:00",
+      "used_for": "Hyperliquid.holder_revenue_24h, Hyperliquid.holder_revenue_7d, Hyperliquid.holder_revenue_30d"
+    },
+    {
+      "provider": "DefiLlama",
+      "endpoint": "https://api.llama.fi/overview/open-interest",
+      "scope": "perps_specific",
+      "fetched_at": "2026-10-04T10:07:34.122648+00:00",
+      "used_for": "Hyperliquid.open_interest, Aster.open_interest"
+    },
+    {
+      "provider": "CoinGecko",
+      "endpoint": "https://api.coingecko.com/api/v3/coins/markets",
+      "scope": "token_level",
+      "fetched_at": "2026-10-04T10:07:35.651408+00:00",
+      "used_for": "Hyperliquid.token_price, Hyperliquid.market_cap, Hyperliquid.fdv, Aster.token_price, Aster.market_cap, Aster.fdv"
+    },
+    {
+      "provider": "Aster official API",
+      "endpoint": "https://fapi.asterdex.com/fapi/v3/ticker/24hr",
+      "scope": "perps_specific",
+      "fetched_at": "2026-10-04T10:07:24.272227+00:00",
+      "used_for": "Aster.volume_24h"
+    },
+    {
+      "provider": "DefiLlama",
+      "endpoint": "https://api.llama.fi/protocol/aster",
+      "scope": "parent_protocol",
+      "fetched_at": "2026-10-04T10:07:33.890471+00:00",
+      "used_for": "Aster.tvl"
+    },
+    {
+      "provider": "DefiLlama",
+      "endpoint": "https://api.llama.fi/summary/fees/aster-perps?dataType=dailyFees",
+      "scope": "perps_specific",
+      "fetched_at": "2026-10-04T10:07:33.890497+00:00",
+      "used_for": "Aster.fees_24h, Aster.fees_7d, Aster.fees_30d"
+    },
+    {
+      "provider": "DefiLlama",
+      "endpoint": "https://api.llama.fi/summary/fees/aster?dataType=dailyHoldersRevenue",
+      "scope": "parent_protocol",
+      "fetched_at": "2026-10-04T10:07:33.890516+00:00",
+      "used_for": "Aster.holder_revenue_24h, Aster.holder_revenue_7d, Aster.holder_revenue_30d"
+    }
+  ],
+  "provenance": "Values and shares are parsed from the dated sample report. Display values retain the original rounding; they are not reconstructed raw API precision."
+}
