@@ -140,7 +140,7 @@ Date: {datetime.now().date().isoformat()}
 |---|---:|---:|
 {perp_table}
 
-7d/30d volume requires one official 24h-volume snapshot for every consecutive UTC calendar day in the window. Any missing day keeps the metric N/A.
+7d/30d volume is a daily-sampled estimate requiring one official rolling-24h observation for every consecutive UTC date. Sampling times may differ; it is not an exact calendar-volume reconstruction. Any missing day keeps the metric N/A.
 
 ## Token / Value Capture Snapshot
 
@@ -181,7 +181,7 @@ Hyperliquid and Aster holder-revenue multiples have different scopes and should 
 
 - DefiLlama's public derivatives-volume API currently returns HTTP 402. Pairwise volume uses official perps-only 24h notional/quote-volume fields with aligned product scope but provider-specific calculation.
 - Perp fees/revenue use standalone `hyperliquid-perps` and `aster-perps` datasets, not parent-protocol fee totals.
-- Aster Perps does not expose protocol revenue or holder revenue through the tested public summary endpoint; combined Aster holder revenue is labeled parent-protocol scope.
+- Revenue/holder datasets may be missing independently. Any combined parent holder revenue is labeled parent-protocol scope and is not silently substituted for perp protocol revenue.
 - Missing one side of a comparison makes both pairwise shares N/A; missing values are never treated as zero.
 - Run-rate annualization assumes the recent 30D period repeats and is not equivalent to trailing twelve-month revenue.
 {oi_quality_note}

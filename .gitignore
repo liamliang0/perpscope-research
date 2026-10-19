@@ -11,3 +11,5 @@ output/*.md
 !data/processed/.gitkeep
 !data/history/.gitkeep
 !output/.gitkeep
+
+output/*.json

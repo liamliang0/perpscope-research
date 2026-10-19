@@ -1,16 +1,20 @@
 # PerpScope
 
-**HYPE / ASTER 竞品研究与数据核验工具。** 我把个人 Web3 研究问题，借助 Codex 做成了可运行的数据采集、指标比较与报告流程。
+**HYPE / ASTER 协议增长、叙事兑现与代币价值追踪。** 我把个人 Web3 研究问题，借助 Codex 做成了可运行的数据采集、指标比较与报告流程。
 
 ## 直接看成果
 
 ### [打开可交互报告，无需安装](https://liamliang0.github.io/perpscope-research/)
 
-可以切换成交量与持仓份额，查看双协议数据，核对来源和口径，或了解我在项目中的贡献。
+先看生态扩张与隐私交易的采用证据，再比较完整日/周/月经营变化、价值捕获和估值负担。可直接切换报告，也能下载本期数据和核对原始接口。
 
 [![点击打开 PerpScope 交互式报告](docs/preview.png)](https://liamliang0.github.io/perpscope-research/)
 
-样例采集于 **2026-10-04**，保留真实日期和缺失数据；本页不是实时行情。
+线上报告使用最新成功采集的数据；每日 00:25 UTC（北京时间08:25）由 GitHub Actions 尝试更新，失败保留上一份成功结果。页面显示实际采集时间和超过36小时的延迟提示。研究观点另有复核日期，不会因刷新行情自动变成新观点。
+
+**新增：**[增长叙事](https://liamliang0.github.io/perpscope-research/#narratives) · [完整日/周/月对比](https://liamliang0.github.io/perpscope-research/#trends) · [代币价值与验证条件](https://liamliang0.github.io/perpscope-research/#valuation)。费用/收入使用公开历史序列；7/30日成交量历史端点需要付费，未接入前不假造。
+
+[2026-10-04 原始归档](examples/sample_report.md)保留原日期，和线上当前报告分开。
 
 ## 这个项目解决什么问题
 
@@ -22,7 +26,7 @@
 |---|---|
 | 协议相对位置 | [成交量与OI份额对比](https://liamliang0.github.io/perpscope-research/#overview)，明确仅比较两家协议 |
 | 指标口径核验 | [核验过程与原始接口](https://liamliang0.github.io/perpscope-research/#quality)，区分永续业务、母协议和Token层级 |
-| 实际交付 | [双协议数据表](https://liamliang0.github.io/perpscope-research/#comparison)、[原始报告](examples/sample_report.md)、[展示数据](docs/report-data.json) |
+| 实际交付 | [双协议数据表](https://liamliang0.github.io/perpscope-research/#comparison)、[本期报告](docs/sample_report.md)、[展示数据](docs/report-data.json) |
 | 程序检查 | [测试代码](tests/)、[自动检查结果](https://github.com/liamliang0/perpscope-research/actions) |
 
 ## 我负责什么

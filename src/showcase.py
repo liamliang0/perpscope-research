@@ -1,4 +1,4 @@
-"""Render the existing dated Markdown report as a recruiter-readable static artifact."""
+"""Render the existing dated Markdown report as a readable static artifact."""
 import argparse
 import html
 import json
@@ -62,6 +62,7 @@ def build(report_path,output):
     replacements={'__CAPTURE__':html.escape(data['capture_date']),'__PERPS__':table(data['tables']['perps']),'__TOKEN__':table(data['tables']['token']),
                   '__SOURCES__':source_rows,'__STYLE__':(ROOT/'web/style.css').read_text(encoding='utf-8'),'__SCRIPT__':(ROOT/'web/app.js').read_text(encoding='utf-8'),
                   '__DATA__':json.dumps(data,ensure_ascii=False).replace('<',r'\u003c').replace('>',r'\u003e').replace('&',r'\u0026')}
+    for key in ('NARRATIVE','TRENDS','VALUATION'): replacements['__'+key+'__']='历史归档：此页只保留原始快照，不回填当前研究。'
     for key,value in replacements.items():page=page.replace(key,value)
     if re.search(r'__(CAPTURE|PERPS|TOKEN|SOURCES|STYLE|SCRIPT|DATA)__',page):raise ValueError('Unresolved report placeholder')
     (output/'index.html').write_text(page,encoding='utf-8')
