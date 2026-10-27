@@ -1,6 +1,6 @@
 # PerpScope Daily
 
-Date: 2026-10-26
+Date: 2026-10-27
 
 > Research support only. This report does not provide financial advice. N/A means the metric was not reliably available; it is never silently estimated.
 
@@ -8,19 +8,19 @@ Date: 2026-10-26
 
 - Hyperliquid: 4/4 core snapshot metrics are currently verified.
 - Aster: 3/4 core snapshot metrics are currently verified.
-- Both: No change-based signal has enough local history to pass a rule threshold.
+- Aster: Aster is gaining relative trading activity share against Hyperliquid.
 
 ## Perp Market Snapshot
 
 | Metric | Hyperliquid | Aster |
 |---|---:|---:|
-| 24h Volume | $3.19B | $757.84M |
-| 7d Volume | $33.71B | $10.20B |
+| 24h Volume | $4.81B | $1.62B |
+| 7d Volume | $34.41B | $10.39B |
 | 30d Volume | N/A | N/A |
-| Standardized OI | $7.57B | $1.42B |
-| Official API OI | $11.08B | N/A |
-| Perp 24h Fees | $2.49M | $69.84K |
-| Perp 24h Revenue | $1.98M | N/A |
+| Standardized OI | $7.55B | $1.44B |
+| Official API OI | $11.11B | N/A |
+| Perp 24h Fees | $2.73M | $151.53K |
+| Perp 24h Revenue | $2.06M | N/A |
 
 7d/30d volume is a daily-sampled estimate requiring one official rolling-24h observation for every consecutive UTC date. Sampling times may differ; it is not an exact calendar-volume reconstruction. Any missing day keeps the metric N/A.
 
@@ -28,12 +28,12 @@ Date: 2026-10-26
 
 | Metric | Hyperliquid | Aster |
 |---|---:|---:|
-| Parent-protocol TVL | $8.20B | $793.28M |
-| Perps-linked Holder Revenue (24h) | $1.98M | N/A |
-| Parent/Token Holder Revenue (24h) | N/A | $71.84K |
-| Token Price | $76.41 | $0.70 |
-| Market Cap | $17B | $1.75B |
-| FDV | $72.99B | $5.45B |
+| Parent-protocol TVL | $8.14B | $802.18M |
+| Perps-linked Holder Revenue (24h) | $2.06M | N/A |
+| Parent/Token Holder Revenue (24h) | N/A | $48.74K |
+| Token Price | $78.53 | $0.71 |
+| Market Cap | $17.47B | $1.78B |
+| FDV | $75.02B | $5.54B |
 
 Holder revenue is a value-capture metric, not a perp operating-margin metric. Aster's available value is parent-protocol scope and may include non-perp products.
 Hyperliquid and Aster holder-revenue multiples have different scopes and should not be compared directly.
@@ -41,23 +41,23 @@ Hyperliquid and Aster holder-revenue multiples have different scopes and should 
 ## Relative Position
 
 - **Scope: Pairwise comparison between Hyperliquid and Aster—not global Perp DEX market share.**
-- Hyperliquid has 80.8% of combined Hyperliquid+Aster 24h volume; Aster has 19.2%.
-- Hyperliquid has 84.2% of combined measured OI; Aster has 15.8%.
+- Hyperliquid has 74.8% of combined Hyperliquid+Aster 24h volume; Aster has 25.2%.
+- Hyperliquid has 84.0% of combined measured OI; Aster has 16.0%.
 - OI share uses the same standardized DefiLlama open-interest dataset for both protocols. Official Hyperliquid OI is shown only as a cross-check.
 
 ## Hyperliquid Thesis Update
 
 ### Growth
-**Fact:** Perp 24h volume is $3.19B. 7d volume is $33.71B; 30d volume is N/A (Insufficient historical data for 30D comparison.).
+**Fact:** Perp 24h volume is $4.81B. 7d volume is $34.41B; 30d volume is N/A (Insufficient historical data for 30D comparison.).
 
 ### Liquidity / OI
-**Fact:** Standardized perp OI is $7.57B; Volume/OI is 0.42x.
+**Fact:** Standardized perp OI is $7.55B; Volume/OI is 0.64x.
 
 ### Monetization
-**Fact:** Perp 24h fees are $2.49M and perp protocol revenue is $1.98M. Fees/Volume is 0.078%.
+**Fact:** Perp 24h fees are $2.73M and perp protocol revenue is $2.06M. Fees/Volume is 0.057%.
 
 ### Token Value Capture
-**Fact:** Market cap is $17B. Market Cap / 30D Revenue Run-Rate is 23.46x; Market Cap / 30D Perps-linked Holder Revenue Run-Rate is 23.46x.
+**Fact:** Market cap is $17.47B. Market Cap / 30D Revenue Run-Rate is 23.33x; Market Cap / 30D Perps-linked Holder Revenue Run-Rate is 23.33x.
 
 **Unknown:** A run-rate is not trailing-twelve-month revenue and does not establish durable token value capture.
 
@@ -70,22 +70,22 @@ Competitive share is limited to the two-protocol comparison in this report; it i
 ### Key Risks
 API methodology changes, incentive-driven activity, incomplete value-capture disclosure, and limited retention/participant-quality data.
 
-### Thesis Status: Baseline Established
-A current operating baseline exists, but no comparable historical period is available yet.
+### Thesis Status: Stable
+The available core metrics do not show a broad directional move.
 
 ## Aster Thesis Update
 
 ### Growth
-**Fact:** Perp 24h volume is $757.84M. 7d volume is $10.20B; 30d volume is N/A (Insufficient historical data for 30D comparison.).
+**Fact:** Perp 24h volume is $1.62B. 7d volume is $10.39B; 30d volume is N/A (Insufficient historical data for 30D comparison.).
 
 ### Liquidity / OI
-**Fact:** Standardized perp OI is $1.42B; Volume/OI is 0.53x.
+**Fact:** Standardized perp OI is $1.44B; Volume/OI is 1.12x.
 
 ### Monetization
-**Fact:** Perp 24h fees are $69.84K and perp protocol revenue is N/A. Fees/Volume is 0.009%.
+**Fact:** Perp 24h fees are $151.53K and perp protocol revenue is N/A. Fees/Volume is 0.009%.
 
 ### Token Value Capture
-**Fact:** Market cap is $1.75B. Market Cap / 30D Revenue Run-Rate is N/A; Market Cap / 30D Parent/Token Holder Revenue Run-Rate is 58.85x.
+**Fact:** Market cap is $1.78B. Market Cap / 30D Revenue Run-Rate is N/A; Market Cap / 30D Parent/Token Holder Revenue Run-Rate is 60.33x.
 
 **Unknown:** A run-rate is not trailing-twelve-month revenue and does not establish durable token value capture.
 
@@ -98,12 +98,12 @@ Competitive share is limited to the two-protocol comparison in this report; it i
 ### Key Risks
 API methodology changes, incentive-driven activity, incomplete value-capture disclosure, and limited retention/participant-quality data.
 
-### Thesis Status: Baseline Established
-A current operating baseline exists, but no comparable historical period is available yet.
+### Thesis Status: Stable
+The available core metrics do not show a broad directional move.
 
 ## Key Signals
 
-- **🟡 Watch — Both: History is still accumulating.** **Fact:** PerpScope requires prior daily snapshots for comparable 1D/7D/30D changes. **Interpretation:** No change-based signal has enough local history to pass a rule threshold.
+- **🟢 Positive — Aster: Aster is gaining pairwise volume share.** **Fact:** Aster pairwise share changed +6.0 percentage points over 1d. **Interpretation:** Aster is gaining relative trading activity share against Hyperliquid.
 
 ## Data Gaps
 
@@ -124,7 +124,7 @@ A current operating baseline exists, but no comparable historical period is avai
 - Missing one side of a comparison makes both pairwise shares N/A; missing values are never treated as zero.
 - Run-rate annualization assumes the recent 30D period repeats and is not equivalent to trailing twelve-month revenue.
 
-- Hyperliquid official OI differs from standardized OI by +46.3%. The standardized figure is used only for pairwise share; the discrepancy is not silently reconciled.
+- Hyperliquid official OI differs from standardized OI by +47.2%. The standardized figure is used only for pairwise share; the discrepancy is not silently reconciled.
 
 ## What To Watch Next
 
@@ -136,17 +136,17 @@ A current operating baseline exists, but no comparable historical period is avai
 
 ## Sources
 
-- **Hyperliquid official API** — scope: `perps_specific`; dataset: `metaAndAssetCtxs`; fetched 2026-10-26T01:15:41.464289+00:00. Used for: Hyperliquid.volume_24h, Hyperliquid.official_open_interest. Endpoint: `https://api.hyperliquid.xyz/info`. Method: Default/first Hyperliquid perp dex only (no dex parameter). 24h notional volume is summed across its active assets; official OI is openInterest × markPx. HIP-3 builder-deployed perp dexes are not aggregated.
-- **DefiLlama** — scope: `parent_protocol`; dataset: `hyperliquid`; fetched 2026-10-26T01:15:44.308726+00:00. Used for: Hyperliquid.tvl. Endpoint: `https://api.llama.fi/protocol/hyperliquid`. Method: Latest parent-protocol TVL reported by DefiLlama.
-- **DefiLlama** — scope: `perps_specific`; dataset: `hyperliquid-perps`; fetched 2026-10-26T01:15:44.308758+00:00. Used for: Hyperliquid.fees_24h, Hyperliquid.fees_7d, Hyperliquid.fees_30d. Endpoint: `https://api.llama.fi/summary/fees/hyperliquid-perps?dataType=dailyFees`. Method: DefiLlama dailyFees for the standalone hyperliquid-perps dataset.
-- **DefiLlama** — scope: `perps_specific`; dataset: `hyperliquid-perps`; fetched 2026-10-26T01:15:44.308775+00:00. Used for: Hyperliquid.revenue_24h, Hyperliquid.revenue_7d, Hyperliquid.revenue_30d. Endpoint: `https://api.llama.fi/summary/fees/hyperliquid-perps?dataType=dailyRevenue`. Method: DefiLlama dailyRevenue for the standalone hyperliquid-perps dataset.
-- **DefiLlama** — scope: `perps_specific`; dataset: `hyperliquid-perps`; fetched 2026-10-26T01:15:44.308791+00:00. Used for: Hyperliquid.holder_revenue_24h, Hyperliquid.holder_revenue_7d, Hyperliquid.holder_revenue_30d. Endpoint: `https://api.llama.fi/summary/fees/hyperliquid-perps?dataType=dailyHoldersRevenue`. Method: DefiLlama dailyHoldersRevenue for the standalone hyperliquid-perps dataset.
-- **DefiLlama** — scope: `perps_specific`; dataset: `open-interest`; fetched 2026-10-26T01:15:49.610205+00:00. Used for: Hyperliquid.open_interest, Aster.open_interest. Endpoint: `https://api.llama.fi/overview/open-interest`. Method: Standardized provider dataset used for cross-protocol OI comparison.
-- **CoinGecko** — scope: `token_level`; dataset: `coins/markets`; fetched 2026-10-26T01:15:49.864537+00:00. Used for: Hyperliquid.token_price, Hyperliquid.market_cap, Hyperliquid.fdv, Aster.token_price, Aster.market_cap, Aster.fdv. Endpoint: `https://api.coingecko.com/api/v3/coins/markets`. Method: USD token market data using the configured CoinGecko coin ID.
-- **Aster official API** — scope: `perps_specific`; dataset: `Futures V3 24hr ticker`; fetched 2026-10-26T01:15:41.943165+00:00. Used for: Aster.volume_24h. Endpoint: `https://fapi.asterdex.com/fapi/v3/ticker/24hr`. Method: 24h quote volume summed across active, non-TEST perpetual markets.
-- **DefiLlama** — scope: `parent_protocol`; dataset: `aster`; fetched 2026-10-26T01:15:49.563765+00:00. Used for: Aster.tvl. Endpoint: `https://api.llama.fi/protocol/aster`. Method: Latest parent-protocol TVL reported by DefiLlama.
-- **DefiLlama** — scope: `perps_specific`; dataset: `aster-perps`; fetched 2026-10-26T01:15:49.563796+00:00. Used for: Aster.fees_24h, Aster.fees_7d, Aster.fees_30d. Endpoint: `https://api.llama.fi/summary/fees/aster-perps?dataType=dailyFees`. Method: DefiLlama dailyFees for the standalone aster-perps dataset.
-- **DefiLlama** — scope: `parent_protocol`; dataset: `aster`; fetched 2026-10-26T01:15:49.563811+00:00. Used for: Aster.holder_revenue_24h, Aster.holder_revenue_7d, Aster.holder_revenue_30d. Endpoint: `https://api.llama.fi/summary/fees/aster?dataType=dailyHoldersRevenue`. Method: Combined parent-protocol holder revenue; may include perps and non-perps products.
+- **Hyperliquid official API** — scope: `perps_specific`; dataset: `metaAndAssetCtxs`; fetched 2026-10-27T01:10:12.968508+00:00. Used for: Hyperliquid.volume_24h, Hyperliquid.official_open_interest. Endpoint: `https://api.hyperliquid.xyz/info`. Method: Default/first Hyperliquid perp dex only (no dex parameter). 24h notional volume is summed across its active assets; official OI is openInterest × markPx. HIP-3 builder-deployed perp dexes are not aggregated.
+- **DefiLlama** — scope: `parent_protocol`; dataset: `hyperliquid`; fetched 2026-10-27T01:10:15.751590+00:00. Used for: Hyperliquid.tvl. Endpoint: `https://api.llama.fi/protocol/hyperliquid`. Method: Latest parent-protocol TVL reported by DefiLlama.
+- **DefiLlama** — scope: `perps_specific`; dataset: `hyperliquid-perps`; fetched 2026-10-27T01:10:15.751638+00:00. Used for: Hyperliquid.fees_24h, Hyperliquid.fees_7d, Hyperliquid.fees_30d. Endpoint: `https://api.llama.fi/summary/fees/hyperliquid-perps?dataType=dailyFees`. Method: DefiLlama dailyFees for the standalone hyperliquid-perps dataset.
+- **DefiLlama** — scope: `perps_specific`; dataset: `hyperliquid-perps`; fetched 2026-10-27T01:10:15.751659+00:00. Used for: Hyperliquid.revenue_24h, Hyperliquid.revenue_7d, Hyperliquid.revenue_30d. Endpoint: `https://api.llama.fi/summary/fees/hyperliquid-perps?dataType=dailyRevenue`. Method: DefiLlama dailyRevenue for the standalone hyperliquid-perps dataset.
+- **DefiLlama** — scope: `perps_specific`; dataset: `hyperliquid-perps`; fetched 2026-10-27T01:10:15.751680+00:00. Used for: Hyperliquid.holder_revenue_24h, Hyperliquid.holder_revenue_7d, Hyperliquid.holder_revenue_30d. Endpoint: `https://api.llama.fi/summary/fees/hyperliquid-perps?dataType=dailyHoldersRevenue`. Method: DefiLlama dailyHoldersRevenue for the standalone hyperliquid-perps dataset.
+- **DefiLlama** — scope: `perps_specific`; dataset: `open-interest`; fetched 2026-10-27T01:10:20.747362+00:00. Used for: Hyperliquid.open_interest, Aster.open_interest. Endpoint: `https://api.llama.fi/overview/open-interest`. Method: Standardized provider dataset used for cross-protocol OI comparison.
+- **CoinGecko** — scope: `token_level`; dataset: `coins/markets`; fetched 2026-10-27T01:10:20.955982+00:00. Used for: Hyperliquid.token_price, Hyperliquid.market_cap, Hyperliquid.fdv, Aster.token_price, Aster.market_cap, Aster.fdv. Endpoint: `https://api.coingecko.com/api/v3/coins/markets`. Method: USD token market data using the configured CoinGecko coin ID.
+- **Aster official API** — scope: `perps_specific`; dataset: `Futures V3 24hr ticker`; fetched 2026-10-27T01:10:13.420624+00:00. Used for: Aster.volume_24h. Endpoint: `https://fapi.asterdex.com/fapi/v3/ticker/24hr`. Method: 24h quote volume summed across active, non-TEST perpetual markets.
+- **DefiLlama** — scope: `parent_protocol`; dataset: `aster`; fetched 2026-10-27T01:10:20.672430+00:00. Used for: Aster.tvl. Endpoint: `https://api.llama.fi/protocol/aster`. Method: Latest parent-protocol TVL reported by DefiLlama.
+- **DefiLlama** — scope: `perps_specific`; dataset: `aster-perps`; fetched 2026-10-27T01:10:20.672457+00:00. Used for: Aster.fees_24h, Aster.fees_7d, Aster.fees_30d. Endpoint: `https://api.llama.fi/summary/fees/aster-perps?dataType=dailyFees`. Method: DefiLlama dailyFees for the standalone aster-perps dataset.
+- **DefiLlama** — scope: `parent_protocol`; dataset: `aster`; fetched 2026-10-27T01:10:20.672474+00:00. Used for: Aster.holder_revenue_24h, Aster.holder_revenue_7d, Aster.holder_revenue_30d. Endpoint: `https://api.llama.fi/summary/fees/aster?dataType=dailyHoldersRevenue`. Method: Combined parent-protocol holder revenue; may include perps and non-perps products.
 
 ## Methodology Notes
 
