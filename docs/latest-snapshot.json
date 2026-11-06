@@ -2,69 +2,69 @@
   "snapshots": {
     "Hyperliquid": {
       "protocol": "Hyperliquid",
-      "timestamp": "2026-11-05T01:30:03.346927+00:00",
-      "volume_24h": 10355007464.131824,
-      "volume_7d": 48708046507.42119,
+      "timestamp": "2026-11-06T01:32:32.112856+00:00",
+      "volume_24h": 9426507520.967478,
+      "volume_7d": 43360776565.09335,
       "volume_30d": null,
-      "open_interest": 7650847998.0,
-      "official_open_interest": 10901882134.172743,
-      "tvl": 8182519103.0,
-      "fees_24h": 2590381.0,
-      "fees_7d": 19323610.0,
-      "fees_30d": 79639954.0,
-      "revenue_24h": 2012955.0,
-      "revenue_7d": 15047102.0,
-      "revenue_30d": 62470509.0,
-      "holder_revenue_24h": 2012955.0,
-      "holder_revenue_7d": 15047102.0,
-      "holder_revenue_30d": 62470509.0,
-      "token_price": 84.1,
-      "market_cap": 20134686880.0,
-      "fdv": 80026649323.0,
+      "open_interest": 7757351105.0,
+      "official_open_interest": 10102736402.035374,
+      "tvl": 8058600475.0,
+      "fees_24h": 3589607.0,
+      "fees_7d": 21618341.0,
+      "fees_30d": 85609995.0,
+      "revenue_24h": 2649079.0,
+      "revenue_7d": 16604070.0,
+      "revenue_30d": 66838384.0,
+      "holder_revenue_24h": 3588995.0,
+      "holder_revenue_7d": 13954991.0,
+      "holder_revenue_30d": 64189305.0,
+      "token_price": 77.27,
+      "market_cap": 18498002776.0,
+      "fdv": 73521539728.0,
       "changes": {
         "volume_24h": {
-          "1d": 102.50413909813474,
-          "7d": 144.91909622657457,
+          "1d": -8.96667574968468,
+          "7d": -36.19433117638904,
           "30d": null
         },
         "open_interest": {
-          "1d": 3.7462526220253984,
-          "7d": -2.190074412246329,
+          "1d": 1.392043169957642,
+          "7d": -1.3826755478427095,
           "30d": null
         },
         "tvl": {
-          "1d": 0.9384407560990373,
-          "7d": -0.8972611674957985,
+          "1d": -1.5144312703720675,
+          "7d": -3.5488440718028427,
           "30d": null
         },
         "fees_24h": {
-          "1d": -16.33301152658168,
-          "7d": -8.187902859366682,
+          "1d": 38.574479970320965,
+          "7d": 27.22813616247855,
           "30d": null
         },
         "revenue_24h": {
-          "1d": -13.370765917670694,
-          "7d": 2.952127469141801,
+          "1d": 31.601501275488026,
+          "7d": 35.4865453444447,
           "30d": null
         },
         "token_price": {
-          "1d": 0.90602,
-          "7d": 4.4798,
-          "30d": -10.5586
+          "1d": -8.12081,
+          "7d": -12.65,
+          "30d": -15.505
         }
       },
       "derived": {
-        "volume_oi": 1.3534457182836093,
-        "fees_volume": 0.00025015732813063506,
-        "revenue_volume": 0.00019439435528874035,
-        "market_cap_30d_revenue_run_rate": 26.858922717170966,
-        "market_cap_30d_holder_revenue_run_rate": 26.858922717170966
+        "volume_oi": 1.2151709254066925,
+        "fees_volume": 0.0003807992506254941,
+        "revenue_volume": 0.0002810244402932503,
+        "market_cap_30d_revenue_run_rate": 23.06309846350165,
+        "market_cap_30d_holder_revenue_run_rate": 24.014907644401717
       },
       "sources": {
         "volume_24h": {
           "provider": "Hyperliquid official API",
           "endpoint": "https://api.hyperliquid.xyz/info",
-          "fetched_at": "2026-11-05T01:30:03.528790+00:00",
+          "fetched_at": "2026-11-06T01:32:32.490077+00:00",
           "scope": "perps_specific",
           "dataset": "metaAndAssetCtxs",
           "methodology": "Default/first Hyperliquid perp dex only (no dex parameter). 24h notional volume is summed across its active assets; official OI is openInterest × markPx. HIP-3 builder-deployed perp dexes are not aggregated.",
@@ -74,7 +74,7 @@
         "official_open_interest": {
           "provider": "Hyperliquid official API",
           "endpoint": "https://api.hyperliquid.xyz/info",
-          "fetched_at": "2026-11-05T01:30:03.528790+00:00",
+          "fetched_at": "2026-11-06T01:32:32.490077+00:00",
           "scope": "perps_specific",
           "dataset": "metaAndAssetCtxs",
           "methodology": "Default/first Hyperliquid perp dex only (no dex parameter). 24h notional volume is summed across its active assets; official OI is openInterest × markPx. HIP-3 builder-deployed perp dexes are not aggregated.",
@@ -84,7 +84,7 @@
         "tvl": {
           "provider": "DefiLlama",
           "endpoint": "https://api.llama.fi/protocol/hyperliquid",
-          "fetched_at": "2026-11-05T01:30:05.686528+00:00",
+          "fetched_at": "2026-11-06T01:32:34.151127+00:00",
           "scope": "parent_protocol",
           "dataset": "hyperliquid",
           "methodology": "Latest parent-protocol TVL reported by DefiLlama.",
@@ -94,7 +94,7 @@
         "fees_24h": {
           "provider": "DefiLlama",
           "endpoint": "https://api.llama.fi/summary/fees/hyperliquid-perps?dataType=dailyFees",
-          "fetched_at": "2026-11-05T01:30:05.686564+00:00",
+          "fetched_at": "2026-11-06T01:32:34.151157+00:00",
           "scope": "perps_specific",
           "dataset": "hyperliquid-perps",
           "methodology": "DefiLlama dailyFees for the standalone hyperliquid-perps dataset.",
@@ -104,7 +104,7 @@
         "fees_7d": {
           "provider": "DefiLlama",
           "endpoint": "https://api.llama.fi/summary/fees/hyperliquid-perps?dataType=dailyFees",
-          "fetched_at": "2026-11-05T01:30:05.686574+00:00",
+          "fetched_at": "2026-11-06T01:32:34.151166+00:00",
           "scope": "perps_specific",
           "dataset": "hyperliquid-perps",
           "methodology": "DefiLlama dailyFees for the standalone hyperliquid-perps dataset.",
@@ -114,7 +114,7 @@
         "fees_30d": {
           "provider": "DefiLlama",
           "endpoint": "https://api.llama.fi/summary/fees/hyperliquid-perps?dataType=dailyFees",
-          "fetched_at": "2026-11-05T01:30:05.686579+00:00",
+          "fetched_at": "2026-11-06T01:32:34.151172+00:00",
           "scope": "perps_specific",
           "dataset": "hyperliquid-perps",
           "methodology": "DefiLlama dailyFees for the standalone hyperliquid-perps dataset.",
@@ -124,7 +124,7 @@
         "revenue_24h": {
           "provider": "DefiLlama",
           "endpoint": "https://api.llama.fi/summary/fees/hyperliquid-perps?dataType=dailyRevenue",
-          "fetched_at": "2026-11-05T01:30:05.686584+00:00",
+          "fetched_at": "2026-11-06T01:32:34.151177+00:00",
           "scope": "perps_specific",
           "dataset": "hyperliquid-perps",
           "methodology": "DefiLlama dailyRevenue for the standalone hyperliquid-perps dataset.",
@@ -134,7 +134,7 @@
         "revenue_7d": {
           "provider": "DefiLlama",
           "endpoint": "https://api.llama.fi/summary/fees/hyperliquid-perps?dataType=dailyRevenue",
-          "fetched_at": "2026-11-05T01:30:05.686590+00:00",
+          "fetched_at": "2026-11-06T01:32:34.151182+00:00",
           "scope": "perps_specific",
           "dataset": "hyperliquid-perps",
           "methodology": "DefiLlama dailyRevenue for the standalone hyperliquid-perps dataset.",
@@ -144,7 +144,7 @@
         "revenue_30d": {
           "provider": "DefiLlama",
           "endpoint": "https://api.llama.fi/summary/fees/hyperliquid-perps?dataType=dailyRevenue",
-          "fetched_at": "2026-11-05T01:30:05.686594+00:00",
+          "fetched_at": "2026-11-06T01:32:34.151186+00:00",
           "scope": "perps_specific",
           "dataset": "hyperliquid-perps",
           "methodology": "DefiLlama dailyRevenue for the standalone hyperliquid-perps dataset.",
@@ -154,7 +154,7 @@
         "holder_revenue_24h": {
           "provider": "DefiLlama",
           "endpoint": "https://api.llama.fi/summary/fees/hyperliquid-perps?dataType=dailyHoldersRevenue",
-          "fetched_at": "2026-11-05T01:30:05.686605+00:00",
+          "fetched_at": "2026-11-06T01:32:34.151195+00:00",
           "scope": "perps_specific",
           "dataset": "hyperliquid-perps",
           "methodology": "DefiLlama dailyHoldersRevenue for the standalone hyperliquid-perps dataset.",
@@ -164,7 +164,7 @@
         "holder_revenue_7d": {
           "provider": "DefiLlama",
           "endpoint": "https://api.llama.fi/summary/fees/hyperliquid-perps?dataType=dailyHoldersRevenue",
-          "fetched_at": "2026-11-05T01:30:05.686609+00:00",
+          "fetched_at": "2026-11-06T01:32:34.151200+00:00",
           "scope": "perps_specific",
           "dataset": "hyperliquid-perps",
           "methodology": "DefiLlama dailyHoldersRevenue for the standalone hyperliquid-perps dataset.",
@@ -174,7 +174,7 @@
         "holder_revenue_30d": {
           "provider": "DefiLlama",
           "endpoint": "https://api.llama.fi/summary/fees/hyperliquid-perps?dataType=dailyHoldersRevenue",
-          "fetched_at": "2026-11-05T01:30:05.686613+00:00",
+          "fetched_at": "2026-11-06T01:32:34.151204+00:00",
           "scope": "perps_specific",
           "dataset": "hyperliquid-perps",
           "methodology": "DefiLlama dailyHoldersRevenue for the standalone hyperliquid-perps dataset.",
@@ -184,7 +184,7 @@
         "open_interest": {
           "provider": "DefiLlama",
           "endpoint": "https://api.llama.fi/overview/open-interest",
-          "fetched_at": "2026-11-05T01:30:13.003058+00:00",
+          "fetched_at": "2026-11-06T01:32:39.046168+00:00",
           "scope": "perps_specific",
           "dataset": "open-interest",
           "methodology": "Standardized provider dataset used for cross-protocol OI comparison.",
@@ -194,7 +194,7 @@
         "token_price": {
           "provider": "CoinGecko",
           "endpoint": "https://api.coingecko.com/api/v3/coins/markets",
-          "fetched_at": "2026-11-05T01:30:14.117871+00:00",
+          "fetched_at": "2026-11-06T01:32:39.279800+00:00",
           "scope": "token_level",
           "dataset": "coins/markets",
           "methodology": "USD token market data using the configured CoinGecko coin ID.",
@@ -204,7 +204,7 @@
         "market_cap": {
           "provider": "CoinGecko",
           "endpoint": "https://api.coingecko.com/api/v3/coins/markets",
-          "fetched_at": "2026-11-05T01:30:14.117871+00:00",
+          "fetched_at": "2026-11-06T01:32:39.279800+00:00",
           "scope": "token_level",
           "dataset": "coins/markets",
           "methodology": "USD token market data using the configured CoinGecko coin ID.",
@@ -214,7 +214,7 @@
         "fdv": {
           "provider": "CoinGecko",
           "endpoint": "https://api.coingecko.com/api/v3/coins/markets",
-          "fetched_at": "2026-11-05T01:30:14.117871+00:00",
+          "fetched_at": "2026-11-06T01:32:39.279800+00:00",
           "scope": "token_level",
           "dataset": "coins/markets",
           "methodology": "USD token market data using the configured CoinGecko coin ID.",
@@ -229,44 +229,44 @@
     },
     "Aster": {
       "protocol": "Aster",
-      "timestamp": "2026-11-05T01:30:03.346956+00:00",
-      "volume_24h": 2648410057.1900024,
-      "volume_7d": 11763768081.920002,
+      "timestamp": "2026-11-06T01:32:32.112876+00:00",
+      "volume_24h": 2584545144.1399984,
+      "volume_7d": 11482441666.009998,
       "volume_30d": null,
-      "open_interest": 1443852606.0,
+      "open_interest": 1375190182.0,
       "official_open_interest": null,
-      "tvl": 756859430.0,
-      "fees_24h": 236747.0,
-      "fees_7d": 1007786.0,
-      "fees_30d": 4094161.0,
+      "tvl": 748412854.0,
+      "fees_24h": 214342.0,
+      "fees_7d": 1027895.0,
+      "fees_30d": 4197427.0,
       "revenue_24h": null,
       "revenue_7d": null,
       "revenue_30d": null,
-      "holder_revenue_24h": 122686.0,
-      "holder_revenue_7d": 752855.0,
-      "holder_revenue_30d": 2675037.0,
-      "token_price": 0.702991,
-      "market_cap": 1807992101.0,
-      "fdv": 5474402480.0,
+      "holder_revenue_24h": 136785.0,
+      "holder_revenue_7d": 805723.0,
+      "holder_revenue_30d": 2725703.0,
+      "token_price": 0.692867,
+      "market_cap": 1781955987.0,
+      "fdv": 5395567974.0,
       "changes": {
         "volume_24h": {
-          "1d": 84.32272409229078,
-          "7d": 61.856794997434896,
+          "1d": -2.41144353294616,
+          "7d": -9.816434896513524,
           "30d": null
         },
         "open_interest": {
-          "1d": 3.1600904856363687,
-          "7d": -0.7622378373614747,
+          "1d": -4.755500922647502,
+          "7d": -0.8002774022611705,
           "30d": null
         },
         "tvl": {
-          "1d": 1.183836944333844,
-          "7d": -2.9050605567504943,
+          "1d": -1.1160032715718426,
+          "7d": 0.3195775115969598,
           "30d": null
         },
         "fees_24h": {
-          "1d": 106.75510453600685,
-          "7d": 84.60092944919218,
+          "1d": -9.463689085817348,
+          "7d": 4.6806473983922485,
           "30d": null
         },
         "revenue_24h": {
@@ -275,23 +275,23 @@
           "30d": null
         },
         "token_price": {
-          "1d": 1.02999,
-          "7d": -0.3686,
-          "30d": -4.3911
+          "1d": -1.57005,
+          "7d": 0.814,
+          "30d": -5.8509
         }
       },
       "derived": {
-        "volume_oi": 1.834266216776148,
-        "fees_volume": 8.939212391120114e-05,
+        "volume_oi": 1.87940924678591,
+        "fees_volume": 8.293219427255228e-05,
         "revenue_volume": null,
         "market_cap_30d_revenue_run_rate": null,
-        "market_cap_30d_holder_revenue_run_rate": 56.322962417591484
+        "market_cap_30d_holder_revenue_run_rate": 54.48001203726158
       },
       "sources": {
         "volume_24h": {
           "provider": "Aster official API",
           "endpoint": "https://fapi.asterdex.com/fapi/v3/ticker/24hr",
-          "fetched_at": "2026-11-05T01:30:04.271971+00:00",
+          "fetched_at": "2026-11-06T01:32:33.118920+00:00",
           "scope": "perps_specific",
           "dataset": "Futures V3 24hr ticker",
           "methodology": "24h quote volume summed across active, non-TEST perpetual markets.",
@@ -301,7 +301,7 @@
         "tvl": {
           "provider": "DefiLlama",
           "endpoint": "https://api.llama.fi/protocol/aster",
-          "fetched_at": "2026-11-05T01:30:12.115357+00:00",
+          "fetched_at": "2026-11-06T01:32:38.929015+00:00",
           "scope": "parent_protocol",
           "dataset": "aster",
           "methodology": "Latest parent-protocol TVL reported by DefiLlama.",
@@ -311,7 +311,7 @@
         "fees_24h": {
           "provider": "DefiLlama",
           "endpoint": "https://api.llama.fi/summary/fees/aster-perps?dataType=dailyFees",
-          "fetched_at": "2026-11-05T01:30:12.115389+00:00",
+          "fetched_at": "2026-11-06T01:32:38.929039+00:00",
           "scope": "perps_specific",
           "dataset": "aster-perps",
           "methodology": "DefiLlama dailyFees for the standalone aster-perps dataset.",
@@ -321,7 +321,7 @@
         "fees_7d": {
           "provider": "DefiLlama",
           "endpoint": "https://api.llama.fi/summary/fees/aster-perps?dataType=dailyFees",
-          "fetched_at": "2026-11-05T01:30:12.115395+00:00",
+          "fetched_at": "2026-11-06T01:32:38.929047+00:00",
           "scope": "perps_specific",
           "dataset": "aster-perps",
           "methodology": "DefiLlama dailyFees for the standalone aster-perps dataset.",
@@ -331,7 +331,7 @@
         "fees_30d": {
           "provider": "DefiLlama",
           "endpoint": "https://api.llama.fi/summary/fees/aster-perps?dataType=dailyFees",
-          "fetched_at": "2026-11-05T01:30:12.115400+00:00",
+          "fetched_at": "2026-11-06T01:32:38.929052+00:00",
           "scope": "perps_specific",
           "dataset": "aster-perps",
           "methodology": "DefiLlama dailyFees for the standalone aster-perps dataset.",
@@ -341,7 +341,7 @@
         "holder_revenue_24h": {
           "provider": "DefiLlama",
           "endpoint": "https://api.llama.fi/summary/fees/aster?dataType=dailyHoldersRevenue",
-          "fetched_at": "2026-11-05T01:30:12.115404+00:00",
+          "fetched_at": "2026-11-06T01:32:38.929056+00:00",
           "scope": "parent_protocol",
           "dataset": "aster",
           "methodology": "Combined parent-protocol holder revenue; may include perps and non-perps products.",
@@ -351,7 +351,7 @@
         "holder_revenue_7d": {
           "provider": "DefiLlama",
           "endpoint": "https://api.llama.fi/summary/fees/aster?dataType=dailyHoldersRevenue",
-          "fetched_at": "2026-11-05T01:30:12.115409+00:00",
+          "fetched_at": "2026-11-06T01:32:38.929060+00:00",
           "scope": "parent_protocol",
           "dataset": "aster",
           "methodology": "Combined parent-protocol holder revenue; may include perps and non-perps products.",
@@ -361,7 +361,7 @@
         "holder_revenue_30d": {
           "provider": "DefiLlama",
           "endpoint": "https://api.llama.fi/summary/fees/aster?dataType=dailyHoldersRevenue",
-          "fetched_at": "2026-11-05T01:30:12.115413+00:00",
+          "fetched_at": "2026-11-06T01:32:38.929063+00:00",
           "scope": "parent_protocol",
           "dataset": "aster",
           "methodology": "Combined parent-protocol holder revenue; may include perps and non-perps products.",
@@ -371,7 +371,7 @@
         "open_interest": {
           "provider": "DefiLlama",
           "endpoint": "https://api.llama.fi/overview/open-interest",
-          "fetched_at": "2026-11-05T01:30:13.003078+00:00",
+          "fetched_at": "2026-11-06T01:32:39.046180+00:00",
           "scope": "perps_specific",
           "dataset": "open-interest",
           "methodology": "Standardized provider dataset used for cross-protocol OI comparison.",
@@ -381,7 +381,7 @@
         "token_price": {
           "provider": "CoinGecko",
           "endpoint": "https://api.coingecko.com/api/v3/coins/markets",
-          "fetched_at": "2026-11-05T01:30:14.117892+00:00",
+          "fetched_at": "2026-11-06T01:32:39.279820+00:00",
           "scope": "token_level",
           "dataset": "coins/markets",
           "methodology": "USD token market data using the configured CoinGecko coin ID.",
@@ -391,7 +391,7 @@
         "market_cap": {
           "provider": "CoinGecko",
           "endpoint": "https://api.coingecko.com/api/v3/coins/markets",
-          "fetched_at": "2026-11-05T01:30:14.117892+00:00",
+          "fetched_at": "2026-11-06T01:32:39.279820+00:00",
           "scope": "token_level",
           "dataset": "coins/markets",
           "methodology": "USD token market data using the configured CoinGecko coin ID.",
@@ -401,7 +401,7 @@
         "fdv": {
           "provider": "CoinGecko",
           "endpoint": "https://api.coingecko.com/api/v3/coins/markets",
-          "fetched_at": "2026-11-05T01:30:14.117892+00:00",
+          "fetched_at": "2026-11-06T01:32:39.279820+00:00",
           "scope": "token_level",
           "dataset": "coins/markets",
           "methodology": "USD token market data using the configured CoinGecko coin ID.",
@@ -417,65 +417,37 @@
     }
   },
   "relative": {
-    "hyperliquid_volume_share": 0.7963296915716672,
-    "aster_volume_share": 0.20367030842833272,
-    "hyperliquid_oi_share": 0.8412424257962962,
-    "aster_oi_share": 0.15875757420370382,
+    "hyperliquid_volume_share": 0.7848194312186982,
+    "aster_volume_share": 0.2151805687813019,
+    "hyperliquid_oi_share": 0.8494186734247172,
+    "aster_oi_share": 0.15058132657528275,
     "changes": {
       "aster_volume_share": {
-        "1d": -1.5683067329872569,
-        "7d": -7.535636504019943,
+        "1d": 1.1510260352969177,
+        "7d": 5.271296207001494,
         "30d": null
       },
       "aster_oi_share": {
-        "1d": -0.0758176083707568,
-        "7d": 0.19259735388758026,
+        "1d": -0.8176247628421063,
+        "7d": 0.0751599634111838,
         "30d": null
       }
     }
   },
   "signals": [
     {
-      "level": "watch",
-      "protocol": "Hyperliquid",
-      "title": "Activity is outpacing positioning",
-      "interpretation": "Trading activity is increasing faster than persistent positioning; growth quality should be monitored.",
-      "evidence": "7D change: volume +144.9% vs OI -2.2%."
-    },
-    {
-      "level": "negative",
-      "protocol": "Hyperliquid",
-      "title": "Monetization is lagging activity",
-      "interpretation": "Activity growth is not translating proportionally into observable revenue.",
-      "evidence": "7D change: volume +144.9% vs revenue +3.0%."
-    },
-    {
       "level": "positive",
       "protocol": "Hyperliquid",
       "title": "Selected fundamentals outpace price",
-      "interpretation": "volume increased faster than price; other operating metrics may differ.",
-      "evidence": "7D price +4.5%; volume +144.9%, OI -2.2%, revenue +3.0%."
-    },
-    {
-      "level": "watch",
-      "protocol": "Aster",
-      "title": "Activity is outpacing positioning",
-      "interpretation": "Trading activity is increasing faster than persistent positioning; growth quality should be monitored.",
-      "evidence": "7D change: volume +61.9% vs OI -0.8%."
+      "interpretation": "revenue increased faster than price; other operating metrics may differ.",
+      "evidence": "7D price -12.7%; volume -36.2%, OI -1.4%, revenue +35.5%."
     },
     {
       "level": "positive",
       "protocol": "Aster",
-      "title": "Selected fundamentals outpace price",
-      "interpretation": "volume increased faster than price; other operating metrics may differ.",
-      "evidence": "7D price -0.4%; volume +61.9%, OI -0.8%."
-    },
-    {
-      "level": "watch",
-      "protocol": "Aster",
-      "title": "Aster is losing pairwise volume share",
-      "interpretation": "Aster is losing relative trading activity share against Hyperliquid.",
-      "evidence": "Aster pairwise share changed -7.5 percentage points over 7d."
+      "title": "Aster is gaining pairwise volume share",
+      "interpretation": "Aster is gaining relative trading activity share against Hyperliquid.",
+      "evidence": "Aster pairwise share changed +5.3 percentage points over 7d."
     }
   ],
   "known_data_gaps": {
